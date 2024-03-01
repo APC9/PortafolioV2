@@ -1,0 +1,8 @@
+<app-home/>
+<app-divider [title]="'Sobre mí'" [id]="'about'"></app-divider>
+<app-about/>
+<app-divider [title]="'Portafolio'" [id]="'portafolio'"></app-divider>
+<app-portafolio/>
+<app-divider [title]="'Contáctame'" [id]="'contacto'" ></app-divider>
+<app-contactos/>
+<app-scroll-back *ngIf="showScroll$ | async" (scrollToTop)="onScrollToTop()"/>
